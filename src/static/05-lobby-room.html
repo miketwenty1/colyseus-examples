@@ -44,7 +44,7 @@
         client.joinOrCreate("lobby").then(room_instance => {
             lobby = room_instance;
             onjoin();
-            console.log("Joined lobby room!");
+            console.log("Joined lobby room! foo!");
 
         }).catch(e => {
             console.error("Error", e);
