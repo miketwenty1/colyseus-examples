@@ -5,7 +5,7 @@ export class ChatRoom extends Room {
     maxClients = 4;
 
     onCreate (options) {
-        console.log("ChatRoom created!", options);
+        console.log("ChatRoom created! foo", options);
 
         this.onMessage("message", (client, message) => {
             console.log("ChatRoom received message from", client.sessionId, ":", message);

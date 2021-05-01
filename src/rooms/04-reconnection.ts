@@ -5,7 +5,7 @@ export class ReconnectionRoom extends Room {
     }
 
     onJoin (client: Client, options: any, auth: any) {
-        client.send("status", "Welcome!");
+        client.send("status", "Welcome! foo");
     }
 
     async onLeave (client: Client, consented?: boolean) {

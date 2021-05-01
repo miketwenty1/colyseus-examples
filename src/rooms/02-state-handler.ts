@@ -13,7 +13,7 @@ export class State extends Schema {
     @type({ map: Player })
     players = new MapSchema<Player>();
 
-    something = "This attribute won't be sent to the client-side";
+    something = "This attribute won't be sent to the client-side foo";
 
     createPlayer(sessionId: string) {
         this.players.set(sessionId, new Player());
